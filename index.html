@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Best Fast Food in town | Zinger Burgers, Pizza, Broast and Family Deals. Order online now.">
+    <title>Zesto Flame Burgers | Premium Fast Food Pakistan</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>ZESTO<span>BURGERS</span></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#deals">Deals</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-btn">
+                <a href="https://wa.me/923001234567" target="_blank" class="whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Order Now
+                </a>
+            </div>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#deals">Deals</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <span class="badge">Open Daily: 11AM - 11PM</span>
+            <h2>CRISPY. SPICY. <span class="text-red">LEGENDS.</span></h2>
+            <p>Experience the taste of perfection. Premium ingredients, authentic spices, and fire-grilled excellence delivered to your table.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">View Menu</a>
+                <a href="https://wa.me/923001234567?text=I'd like to place an order" class="btn btn-outline">Order on WhatsApp</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Special Offers Marquee -->
+    <div class="marquee-container">
+        <div class="marquee-content">
+            🍔 FREE FRIES ON ORDERS ABOVE Rs.1500 | 🎲 FAMILY DEAL 25% OFF | 🍕 ONLINE ORDER GET 10% OFF
+        </div>
+    </div>
+
+    <!-- Menu Categories -->
+    <section id="menu" class="menu-section">
+        <div class="container">
+            <div class="section-title">
+                <h3>Our Menu</h3>
+                <p>Choose from our premium selection of flame-grilled delights</p>
+            </div>
+            
+            <div class="menu-tabs">
+                <button class="tab-btn active" data-category="all">All</button>
+                <button class="tab-btn" data-category="burger">Burgers</button>
+                <button class="tab-btn" data-category="broast">Broast</button>
+                <button class="tab-btn" data-category="pizza">Pizza</button>
+                <button class="tab-btn" data-category="shawarma">Shawarma</button>
+                <button class="tab-btn" data-category="deals">Deals</button>
+            </div>
+
+            <div class="menu-grid">
+                <!-- Item 1: Classic Zinger -->
+                <div class="food-card" data-category="burger">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Zinger Burger">
+                        <span class="tag">Best Seller</span>
+                    </div>
+                    <div class="card-info">
+                        <h4>Classic Zinger</h4>
+                        <p>Spicy chicken fillet, iceberg, cheese & signature mayo.</p>
+                        <div class="price-order">
+                            <span class="price">Rs. 590</span>
+                            <button class="order-btn" onclick="orderItem('Classic Zinger', 590)">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Smoky Beef Blast -->
+                <div class="food-card" data-category="burger">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1586190848861-99c8a3da799c?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Beef Burger">
+                    </div>
+                    <div class="card-info">
+                        <h4>Smoky Beef Blast</h4>
+                        <p>Juicy beef patty, cheddar, caramelized onions & BBQ sauce.</p>
+                        <div class="price-order">
+                            <span class="price">Rs. 750</span>
+                            <button class="order-btn" onclick="orderItem('Smoky Beef Blast', 750)">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Crispy Chicken Broast -->
+                <div class="food-card" data-category="broast">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1637154822412-0b77e3d1be41?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Chicken Broast">
+                    </div>
+                    <div class="card-info">
+                        <h4>Crispy Chicken Broast</h4>
+                        <p>Secret marination, double crispy fried, served with fries.</p>
+                        <div class="price-order">
+                            <span class="price">Rs. 450</span>
+                            <button class="order-btn" onclick="orderItem('Chicken Broast', 450)">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Chicken Shawarma -->
+                <div class="food-card" data-category="shawarma">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1599484937795-4ebd251b9112?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Shawarma">
+                    </div>
+                    <div class="card-info">
+                        <h4>Chicken Shawarma Plate</h4>
+                        <p>Spiced chicken, garlic sauce, pickles, fries & pita bread.</p>
+                        <div class="price-order">
+                            <span class="price">Rs. 500</span>
+                            <button class="order-btn" onclick="orderItem('Chicken Shawarma', 500)">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5: Peshawari Pizza -->
+                <div class="food-card" data-category="pizza">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1604382354936-07c5d9983bd3?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Pizza">
+                    </div>
+                    <div class="card-info">
+                        <h4>Peshawari Special Pizza</h4>
+                        <p>Chicken, green olives, jalapenos & mozzarella cheese.</p>
+                        <div class="price-order">
+                            <span class="price">Rs. 1200</span>
+                            <button class="order-btn" onclick="orderItem('Peshawari Pizza', 1200)">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Family Feast Box -->
+                <div class="food-card" data-category="deals">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1594212699903-ec8a3eca50f5?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Family Deal">
+                        <span class="tag">Hot Deal</span>
+                    </div>
+                    <div class="card-info">
+                        <h4>Family Feast Box</h4>
+                        <p>2 Zinger Burgers, 1 Large Pizza, 4pcs Broast & 1.5L Drink.</p>
+                        <div class="price-order">
+                            <span class="price">Rs. 2499</span>
+                            <button class="order-btn" onclick="orderItem('Family Feast Box', 2499)">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 7: Double Zinger Stack -->
+                <div class="food-card" data-category="burger">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1550547990-5343fbad71d9?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Double Zinger">
+                    </div>
+                    <div class="card-info">
+                        <h4>Double Zinger Stack</h4>
+                        <p>Two spicy chicken fillets, double cheese, house mayo & lettuce.</p>
+                        <div class="price-order">
+                            <span class="price">Rs. 890</span>
+                            <button class="order-btn" onclick="orderItem('Double Zinger Stack', 890)">Order</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 8: Cheese Fries -->
+                <div class="food-card" data-category="deals">
+                    <div class="card-img">
+                        <img src="https://images.unsplash.com/photo-1573080496219-bb080dd4f50f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80" alt="Cheese Fries">
+                    </div>
+                    <div class="card-info">
+                        <h4>Loaded Cheese Fries</h4>
+                        <p>Crispy fries topped with melted cheddar & garlic mayo.</p>
+                        <div class="price-order">
+                            <span class="price">Rs. 280</span>
+                            <button class="order-btn" onclick="orderItem('Cheese Fries', 280)">Order</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1552566626-52f8b828add9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Chef Cooking">
+                    <div class="exp-box">
+                        <h2>10+</h2>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Serving Happiness Since 2013</h3>
+                    <p>Zesto Burgers started with a simple mission: to bring the sizzle of international fast food standards to Pakistan. We believe in using only fresh, locally sourced chicken and premium spices.</p>
+                    <ul class="features-list">
+                        <li><i class="fas fa-check-circle"></i> 100% Fresh Ingredients</li>
+                        <li><i class="fas fa-check-circle"></i> Flame Grilled Perfection</li>
+                        <li><i class="fas fa-check-circle"></i> Express Home Delivery</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-primary">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews / Testimonials -->
+    <section class="reviews-section">
+        <div class="container">
+            <div class="section-title">
+                <h3>Customer Love</h3>
+            </div>
+            <div class="reviews-grid">
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The best Zinger in Lahore! The fries are crispy and the spice level is perfect. Highly recommended."</p>
+                    <div class="user">- Ahmed Khan</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Family Feast Box is amazing! Great value for money and delivery was super fast. Will order again!"</p>
+                    <div class="user">- Fatima Ali</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"The Peshawari Pizza is absolutely delicious. Best pizza in the area. Customer service is excellent too!"</p>
+                    <div class="user">- Hassan Raza</div>
+                </div>
+                <div class="review-card">
+                    <div class="stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Fresh ingredients and authentic taste. Every time I order, the quality is consistent. Love it!"</p>
+                    <div class="user">- Zainab Khan</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-title">
+                <h3>Get in Touch</h3>
+                <p>We'd love to hear from you!</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h4>Location</h4>
+                        <p>Main Market, Lahore, Pakistan</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone"></i>
+                        <h4>Call Us</h4>
+                        <p><a href="tel:923001234567">+92 300 123 4567</a></p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h4>Hours</h4>
+                        <p>Daily: 11:00 AM - 11:00 PM</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fab fa-whatsapp"></i>
+                        <h4>WhatsApp</h4>
+                        <p><a href="https://wa.me/923001234567" target="_blank">Chat with us</a></p>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form onsubmit="handleFormSubmit(event)">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <textarea placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ZESTO BURGERS</h4>
+                    <p>Premium fast food delivered with passion and quality.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#menu">Menu</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="https://wa.me/923001234567"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zesto Burgers. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
